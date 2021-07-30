@@ -23,6 +23,7 @@ class BatchTestCase(TestCase):
             token=token,
             repo_id="Narsil/bulk-dummy",
             pipeline=pipeline,
+            use_gpu=False,
         )
 
         response = requests.get(
